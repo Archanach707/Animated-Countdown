@@ -5,7 +5,7 @@ const replay = document.querySelector('#replay')
 
 runAnimaton() 
 
-function resetDOM {
+function resetDOM() {
   counter.classList.remove('hide')
   finalMessage.classList.remove('show')
 
@@ -35,4 +35,7 @@ function runAnimaton() {
   })
 }
 
-
+replay.addEventListener('click', () => {
+  resetDOM()
+  runAnimaton()
+})
